@@ -1,0 +1,5 @@
+1 0.5
+diffuse ?cowboyHat_diffuse.png
+MREA cowboyHat_MREA.png
+normal ~def_normal.png
+thickness cowboyHat_thickness.png

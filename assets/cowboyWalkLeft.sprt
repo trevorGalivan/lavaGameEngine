@@ -1,0 +1,5 @@
+2 0.5
+diffuse ?cowboyWalkLeft_diffuse.png
+MREA cowboyWalkLeft_MREA.png
+normal ~def_normal.png
+thickness cowboyWalkLeft_thickness.png

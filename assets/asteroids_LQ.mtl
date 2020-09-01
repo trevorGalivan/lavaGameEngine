@@ -1,0 +1,53 @@
+# Blender MTL File: 'asteroids_LQ.blend'
+# Material Count: 4
+
+newmtl dark_rock
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Rock3_color.png
+map_Ks Rock3_MREA.png
+map_Bump Rock3_Normal.png
+newmtl grey_rock
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd greyRock_color.png
+map_Ks greyRock_MREA.png
+map_Bump greyRock_normal.png
+
+newmtl red_rock
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump redRock_normal.png
+map_Kd redRock_color.png
+map_Ks redRock_MREA.png
+
+newmtl white_rock
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Rock2_color.png
+map_Ks Rock2_MREA.png
+map_Bump Rock2_Normal.png

@@ -1,0 +1,5 @@
+2 0.8
+diffuse ?astronautWalkLeft_diffuse.png
+MREA astronautWalkLeft_MREA.png
+normal ~def_normal.png
+thickness astronautWalkLeft_thickness.png

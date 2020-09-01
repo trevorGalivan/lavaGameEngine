@@ -1,0 +1,119 @@
+# Blender MTL File: 'desertScene_clean_tris.blend'
+# Material Count: 9
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump cactus_normal.png
+map_Kd cactus_color.png
+map_Ks cactus_MREA.png
+
+newmtl grass
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump allgrass_normal.png
+map_Kd allgrass_color.png
+map_Ks allgrass_MREA.png
+
+newmtl petal
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump petal_normal.png
+map_Kd petal_color.png
+map_Ks petal_MREA.png
+
+newmtl rock_grey
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump redRock_normal.png
+map_Kd redRock_color.png
+map_Ks redRock_MREA.png
+
+newmtl rock_red
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump greyRock_normal.png
+map_Kd greyRock_color.png
+map_Ks greyRock_MREA.png
+
+newmtl rock_red.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump greyRock_normal.png
+map_Kd greyRock_color.png
+map_Ks greyRock_MREA.png
+
+newmtl sand
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump sand_normal.png
+map_Kd sand_color.png
+map_Ks sand_MREA.png
+
+newmtl shrub
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump shrub_normal.png
+map_Kd shrub_color.png
+map_Ks shrub_MREA.png
+
+newmtl thorns
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump thorns_normal.png
+map_Kd thorns_color.png
+map_Ks def_MREA.png

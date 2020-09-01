@@ -1,0 +1,5 @@
+2 0.2
+diffuse ?flamethrower_color.png
+MREA flamethrower_MREA.png
+normal ~def_normal.png
+thickness flamethrower_thickness.png

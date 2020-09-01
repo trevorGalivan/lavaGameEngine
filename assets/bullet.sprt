@@ -1,0 +1,5 @@
+1 0.5
+diffuse ?bullet_color.png
+MREA bullet_MREA.png
+normal ~def_normal.png
+thickness bullet_thickness.png
