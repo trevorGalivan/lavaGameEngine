@@ -2,14 +2,15 @@
 A simple "2.5D" game engine with a small fighting game built on top.
 
 **Requries** the external libraries:
-- GLFW
-- Asimp
-- SoLoud.
-- GLM
+- GLFW https://www.glfw.org/
+- Asimp https://www.assimp.org/
+- SoLoud https://sol.gfxile.net/soloud/
+- GLM https://glm.g-truc.net/0.9.9/index.html
 
 This project contains the following libraries:
-- GLAD
-- STB_IMAGE
+- GLAD https://glad.dav1d.de/
+- STB_IMAGE https://github.com/nothings/stb
+- SMAA http://www.iryoku.com/smaa/
 
 Contains Assets from CC0Textures.com, licensed under the Creative Commons CC0 License.
 
