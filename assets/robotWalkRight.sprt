@@ -1,0 +1,5 @@
+2 0.2
+diffuse ?robot_color.png
+MREA robot_MREA.png
+normal ~def_normal.png
+thickness robot_thickness.png
