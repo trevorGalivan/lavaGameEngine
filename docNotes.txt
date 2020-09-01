@@ -1,0 +1,27 @@
+Doc notes:
+
+The .sprt file format is a human-readable file format for PBR materials, designed for use with animated pixel art.
+The file format contains the path to several images, which themselves contain each frame of the animation.
+The file format allows modifiers to be postfixed to the texture type to allow for various modifiers (such as filtering options) to be applied
+
+A .sprt file looks like this:
+<number of frames> <animation length>
+<texture type><modifiers> <texture path>
+<texture type><modifiers> <texture path>
+.
+.
+.
+<texture type><modifiers> <texture path>
+
+All textures are assumed to contain <number of frames> frames, unless the '~' modifier is applied to mark the image as static
+
+Texture properties can be modified by appending certain special characters to the beginning of the texture path name.
+Special characetr glossary:
+
+'~' - This texture should be treated as a single frame, which remains constant throughout the animation
+'?' - This texture should be treated as sRGB
+'!' - This texture should have a bilinear upscale filter (as opposed to nearest neighbour). On thickness map, used to detirmine texture coordinate fudge (Set the same as the most visible textures)
+
+All texture paths are be assumed to be on the same animation cycle, with identical animation length and number of frames
+if an image should remain static throughout the animation, prefix its texture path with a '~'. This will flag the texture
+loader to treat the entire image as a single frame. 
