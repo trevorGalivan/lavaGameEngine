@@ -26,3 +26,9 @@ Move: DPad
 Jump: A
 Shoot: X
 Throw: B
+
+## Screenshots:
+
+![Desert](https://octodex.github.com/images/yaktocat.png)
+![Space](https://octodex.github.com/images/yaktocat.png)
+![Volcano](https://octodex.github.com/images/yaktocat.png)
