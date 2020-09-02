@@ -7,6 +7,8 @@
 #include <iostream>
 #include <random>
 #include <thread>
+#include <strstream>
+#include <iomanip>
 
 ButtonEvent makeButtonEventFromGLFWkeypress(int key, int action, int mods)
 {
@@ -125,8 +127,6 @@ void Engine::update()
     double dt = newTime - lastUpdateTime;
     lastUpdateTime = newTime;
 
-
-
     glm::dvec2 newMousePos;
     glfwGetCursorPos(windowWrapper.window, &(newMousePos.x), &(newMousePos.y));
     newMousePos.x *= 2. / graphicsSystem.resolution.x;
@@ -188,6 +188,13 @@ void Engine::draw()
     double dt = newTime - lastDrawTime;
     lastDrawTime = newTime;
     
+    fpsCounter.update(newTime);
+
+    std::stringstream titleStream;
+    titleStream << "Engine - FPS: " << std::fixed << std::setprecision(2) << fpsCounter.getFPS();
+
+    glfwSetWindowTitle(windowWrapper.window, (titleStream.str()).c_str());
+
     graphicsSystem.draw(*this, dt);
 }
 
