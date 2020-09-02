@@ -29,6 +29,6 @@ Throw: B
 
 ## Screenshots:
 
-![Desert](https://octodex.github.com/images/yaktocat.png)
-![Space](https://octodex.github.com/images/yaktocat.png)
-![Volcano](https://octodex.github.com/images/yaktocat.png)
+![Desert](https://github.com/trevorGalivan/lavaGameEngine/blob/master/screenshots/desert.PNG)
+![Space](https://github.com/trevorGalivan/lavaGameEngine/blob/master/screenshots/space.PNG)
+![Volcano](https://github.com/trevorGalivan/lavaGameEngine/blob/master/screenshots/volcano.PNG)
