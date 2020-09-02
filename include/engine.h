@@ -3,6 +3,7 @@
 #include "entityCatagories.h"
 #include "keyMappings.h"
 #include "componentManager.h"
+#include "fpsCounter.h"
 
 #include "graphicsSystem.h"
 #include "physicsSystem.h"
@@ -54,6 +55,8 @@ class Engine
 	std::queue<handle<Entity>> destructionQueue;
 	void updateJoySticks();
 	void destroyEntity(handle<Entity> ID);
+
+	FpsCounter fpsCounter;
 
 	std::mutex entityDeletionMutex;
 public:

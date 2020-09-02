@@ -125,7 +125,7 @@ public:
 	void destroyComponent(handle<ModelComponent> ID);
 
 	SpriteComponent* getComponent(handle<SpriteComponent> ID);
-	void makeSpriteComponent(Entity& parent, std::string path, glm::vec2 halfExtents, double animationSpeed = 1.);
+	void makeSpriteComponent(Entity& parent, std::string path, glm::vec2 halfExtents, double animationSpeed = 1., bool flipX = false);
 	void destroyComponent(handle<SpriteComponent> ID);
 
 	LightComponent* getComponent(handle<LightComponent> ID);
