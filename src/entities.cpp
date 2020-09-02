@@ -7,9 +7,9 @@ Entity& makeBullet(Engine& engine, unsigned int team, glm::dvec2 position, glm::
 {
 	Entity& bullet = engine.makeEntity();
 	bullet.catagory = catagories::projectileType | catagories::getTeamBits(team);
-	double angle = std::atan2(velocity.y, velocity.x);
+	double angle = std::atan2(-velocity.y, velocity.x);
 
-	engine.positionSystem.makePositionComponent(bullet, glm::dvec3(position, 0), glm::angleAxis(angle, glm::dvec3(0, 0, 1)));
+	engine.positionSystem.makePositionComponent(bullet, glm::dvec3(position, 0), glm::angleAxis(angle, glm::dvec3(0, 0, -1)));
 
 	auto settings = defaultPhysicsSettings;
 	settings.dampingFactor = 0.;

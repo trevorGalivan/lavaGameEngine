@@ -347,7 +347,7 @@ void GraphicsSystem::draw(Engine& engine, double dt)
 		i->model->Draw(renderProg);
 	}
 
-	bool reversedFaceCull = false; // if true, glCullFace is set to "front face" instead of back face
+	bool reversedFaceCull = false; // if true, glCullFace is set to "front face" instead of back face. 
 
 	// render all sprites
 	for (auto i = sprites.begin(), end = sprites.end(); i != end; ++i) {
@@ -357,9 +357,9 @@ void GraphicsSystem::draw(Engine& engine, double dt)
 		if (i->sprite == nullptr) {
 			i->sprite = accessOrMake(rawSprites, i->path);
 		}
-		if (i->flipX != reversedFaceCull) {
-			reversedFaceCull = !reversedFaceCull;
-			glCullFace(reversedFaceCull ? GL_FRONT : GL_BACK);
+		if (i->flipX != reversedFaceCull) { // we need to flip the side that is culled
+			reversedFaceCull = i->flipX;
+			glCullFace(i->flipX ? GL_FRONT : GL_BACK);
 		}
 
 		i->sprite->Draw(renderProg, i->animationPosition, positionComponent.position, i->halfExtents, positionComponent.rotation, i->flipX);
@@ -624,7 +624,7 @@ SpriteComponent* GraphicsSystem::getComponent(handle<SpriteComponent> ID)
 	return sprites.find(ID);
 }
 
-void GraphicsSystem::makeSpriteComponent(Entity& parent, std::string path, glm::vec2 halfExtents, double animationSpeed /*= 1.*/)
+void GraphicsSystem::makeSpriteComponent(Entity& parent, std::string path, glm::vec2 halfExtents, double animationSpeed /*= 1.*/, bool flipX /*= false*/)
 {
 	SpriteComponent component;
 
@@ -634,6 +634,7 @@ void GraphicsSystem::makeSpriteComponent(Entity& parent, std::string path, glm::
 	component.entity_ID = parent.ID;
 	component.animationSpeed = animationSpeed;
 	component.animationPosition = 0.;
+	component.flipX = flipX;
 	parent.spriteHandle = sprites.add(std::move(component));
 }
 
