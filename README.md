@@ -32,7 +32,7 @@ The gameplay and physics are 2D, but the graphics remain fully 3D, with a custom
 All objects in the game have three textures: a base color texture, an "MREA" map (metalness, roughness, emmisiveness, ambient occlusion), and a normal map.
 The game supports full transparency for any part of the object, but at this point does not support partial transparency.
 
-There are two post-processing effects: Bloom, and SMAA. The bloom is fairly conservative, and only effects values that would otherwise be clipped by the conversion to a low dynamic range.
+There are two post-processing effects: Bloom, and SMAA. The bloom is fairly conservative, and only effects values that would otherwise be clipped by the conversion to a low dynamic range. The SMAA (Subpixel morphological antialiasing) is a multi-pass effect that uses an intelligent blur filter to antialias edges without blurring textures as much as FXAA would.
 
 ## Screenshots:
 
