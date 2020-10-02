@@ -1,2 +1,4 @@
 *.frag linguist-language=GLSL
 *.vert linguist-language=GLSL
+*.c linguist-detectable=false
+*.hlsl linguist-detectable=false
