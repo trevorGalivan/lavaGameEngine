@@ -2,3 +2,6 @@
 *.vert linguist-language=GLSL
 *.c linguist-detectable=false
 *.hlsl linguist-detectable=false
+include/stb_image.h linguist-detectable=false
+include/SMAA/SearchTex.h linguist-detectable=false
+include/glad/glad.h linguist-detectable=false
