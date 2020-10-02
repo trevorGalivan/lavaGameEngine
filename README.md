@@ -28,7 +28,7 @@ Shoot: X
 Throw: B
 
 ## Graphics:
-The gameplay and physics are 2D, but the graphicsa remain fully 3D.
+The gameplay and physics are 2D, but the graphics remain fully 3D, witha  custom deffered rendering pipeline.
 All objects in the game have three textures: a base color texture, an "MREA" map (metalness, roughness, emmisiveness, ambient occlusion), and a normal map.
 The game supports full transparency for any part of the object, but at this point does not support partial transparency.
 
